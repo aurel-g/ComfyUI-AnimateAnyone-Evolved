@@ -23,7 +23,7 @@ from .src.models.unet_2d_condition import UNet2DConditionModel
 from .src.models.unet_3d import UNet3DConditionModel
 from .src.models.main_diffuser import AADiffusion
 
-ROOT_PATH = os.path.join(comfy_paths.get_folder_paths("custom_nodes")[0], "./ComfyUI-AnimateAnyone-Evolved")
+ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 DEFAULT_CONFIG_PATH = os.path.join(ROOT_PATH, "./configs/default.yaml")
 CONFIG = OmegaConf.load(DEFAULT_CONFIG_PATH)
 
